@@ -1,0 +1,33 @@
+{
+  "name": "ms-authentication",
+  "version": "1.0.0",
+  "description": "API REST with Node.js and Typescript for User Login and Authentication microservice.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./",
+    "build": "tsc -p ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbathat/restAPI-nodejs.git"
+  },
+  "keywords": [
+    "API-Rest",
+    "Typescript",
+    "Nodejs",
+    "MongoDB",
+    "Mongoose",
+    "Microservice"
+  ],
+  "author": "Tabatha Pradier",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/tbathat/restAPI-nodejs/issues"
+  },
+  "homepage": "https://github.com/tbathat/restAPI-nodejs#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.4"
+  }
+}
