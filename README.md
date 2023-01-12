@@ -2,7 +2,7 @@
 
 ## Study project developed as an exercise proposed by Digital Innovation One (DIO), in order to address the structure and development of the Architecture of a REST Api using Node.js.
 
-### The following essential points are addressed:
+### The following essential points for developing this Authentication Microservice API Rest are addressed in:
 
 - REST Architecture Style
 - Microservices
@@ -18,7 +18,7 @@ Tabatha Pradier, 2023.
 
 ## Projeto de estudo desenvolvido como exercício proposto pela Digital Innovation One (DIO), com o intuito de abordar a estrutura e desenvolvimento da Arquitetura de uma Api REST utilizando Node.js.
 
-### São abordados os seguintos pontos essenciais:
+### São abordados os seguintos pontos essenciais para o desenvolvimento do Microsserviço de Autenticação dessa API Rest são:
 
 - Estilo de Arquitetura REST
 - Microserviços
