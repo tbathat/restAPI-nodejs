@@ -9,9 +9,6 @@
 - Development of the REST API with Nodejs + Typescript + Express.
 - Database MongoDB and Postgres.
 
-Tabatha Pradier, 2023.
-
-
 ### _______________________________ *PORTUGUÊS* ________________________________________
 
 # Aplicando o estilo Arquitetural REST com Node.js
