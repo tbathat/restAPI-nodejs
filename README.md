@@ -1,4 +1,4 @@
-# Applying the REST Architectural Style with Node.js
+# Applying the REST Architectural Style with Node.js for "User sign up and authentication"
 
 ## Study project developed as an exercise proposed by Digital Innovation One (DIO), in order to address the structure and development of the Architecture of a REST Api using Node.js.
 
@@ -11,7 +11,7 @@
 
 #### _______________________________ *PORTUGUÊS* ________________________________________
 
-# Aplicando o estilo Arquitetural REST com Node.js
+# Aplicando o estilo Arquitetural REST com Node.js para "Criação e autenticação de Usuário"
 
 ## Projeto de estudo desenvolvido como exercício proposto pela Digital Innovation One (DIO), com o intuito de abordar a estrutura e desenvolvimento da Arquitetura de uma Api REST utilizando Node.js.
 
