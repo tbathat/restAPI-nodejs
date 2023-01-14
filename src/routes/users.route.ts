@@ -8,15 +8,23 @@ import { StatusCodes } from 'http-status-codes'
 
 const usersRoute = Router();     //permite configurações de rotas
 
-usersRoute.get('/users', (req: Request, res: Response, next: NextFunction) => {
+usersRoute.get('/users', (_req: Request, _res: Response, _next: NextFunction) => {
     const users = [{ userName: 'Tabatha' }]
-    res.status(StatusCodes.OK).send(users); 
+    _res.status(StatusCodes.OK).send(users); 
 });
 
-usersRoute.get('/user/:uuid', (req: Request<{ uuid: string }>, res: Response, next: NextFunction) => {
-    const uuid = req.params.uuid;
+usersRoute.get('/users/:uuid', (_req: Request<{ uuid: string }>, _res: Response, _next: NextFunction) => {
+    const uuid = _req.params.uuid;
 
-    res.status(StatusCodes.OK).send({ uuid })
+    _res.status(StatusCodes.OK).send({ uuid })
 })
+
+usersRoute.post('/users', (_req: Request, _res: Response, _next: NextFunction) => {
+    const newUser = _req.body;
+
+    console.log(_req.body);
+
+    _res.status(StatusCodes.CREATED).send(newUser);
+});
 
 export default usersRoute;
