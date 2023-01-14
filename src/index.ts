@@ -1,4 +1,5 @@
-import express, { Request, Response, NextFunction } from 'express';
+import express from 'express';
+import statusRoute from './routes/status.route';
 import usersRoute from "./routes/users.route";
 
 const app = express();
@@ -9,10 +10,7 @@ app.use(express.urlencoded({ extended: true }))
 
 //Configurações de Rotas
 app.use(usersRoute);
-
-app.get('/status', (_req: Request, _res: Response, _next: NextFunction) => {  //especifica a rota e o resolver, callback//
-    _res.status(200).send({ foo: 'sucesso' });
-});
+app.use(statusRoute);
 
 //Inicialização do servidor express
 app.listen(3000, () => {
