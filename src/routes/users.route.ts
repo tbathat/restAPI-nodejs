@@ -15,16 +15,26 @@ usersRoute.get('/users', (_req: Request, _res: Response, _next: NextFunction) =>
 
 usersRoute.get('/users/:uuid', (_req: Request<{ uuid: string }>, _res: Response, _next: NextFunction) => {
     const uuid = _req.params.uuid;
-
-    _res.status(StatusCodes.OK).send({ uuid })
+    _res.status(StatusCodes.OK).send({ uuid });
 })
 
 usersRoute.post('/users', (_req: Request, _res: Response, _next: NextFunction) => {
     const newUser = _req.body;
-
-    console.log(_req.body);
-
     _res.status(StatusCodes.CREATED).send(newUser);
+});
+
+usersRoute.put('/users/:uuid', (_req: Request<{ uuid: string }>, _res: Response, _next: NextFunction) => { 
+    const uuid = _req.params.uuid; 
+    const modifiedUser = _req.body; 
+ 
+    modifiedUser.uuid = uuid; 
+    
+    _res.status(StatusCodes.OK).send(modifiedUser);
+});
+
+usersRoute.delete('/users/:uuid', (_req: Request<{ uuid: string }>, _res: Response, _next: NextFunction) => {
+    _res.sendStatus(StatusCodes.OK);
+
 });
 
 export default usersRoute;
